@@ -31,5 +31,5 @@ services:
     entrypoint: "bash -c \"\
         if [ ${MAKECLEAN:-1} != 0 ]; then echo \\\"Clean build\\\" && make clean; fi \
         && make \
-        && echo \\\"BUILD SUCCESS\\\"
+        && echo \\\"BUILD SUCCESS\\\" \""
     stop_signal: SIGKILL
