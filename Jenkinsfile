@@ -64,7 +64,8 @@ pipeline {
 
         stage('Build TCF') {
             steps {
-                sh 'docker-compose up'
+                sh 'docker-compose-build.yaml up'
+                sh 'docker-compose-build.yaml down'
             }
         }
 
